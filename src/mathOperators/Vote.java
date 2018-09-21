@@ -8,7 +8,7 @@ int vote = -999;
 Scanner input = new Scanner(System.in);
 System.out.println("How many years till you are able to vote?");
 vote = input.nextInt() + 1;
-System.out.println("In 1 year I can vote");
+System.out.println("In " +vote+ "year I can vote");
 
 	}
 
