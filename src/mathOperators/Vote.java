@@ -4,11 +4,13 @@ public class Vote {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-int vote = -999;
+int age = -999;
+int yearsVote = -999;
 Scanner input = new Scanner(System.in);
-System.out.println("How many years till you are able to vote?");
-vote = input.nextInt() + 1;
-System.out.println("In " +vote+ "year I can vote");
+System.out.println("What is your age?");
+age = input.nextInt();
+yearsVote =18-age;
+System.out.println(yearsVote + " you can vote");
 
 	}
 
