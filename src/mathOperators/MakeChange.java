@@ -16,7 +16,7 @@ System.out.println((int) (change/.10) + " dimes");
 change = change % .10;
 System.out.println((int) (change/.05) + " nickels");
 change = change % .05;
-System.out.println((int) (change/.01) + " pennies");
+System.out.println((int) Math.ceil(change/.01) + " pennies");
 change = change % .01;
 input.close();
 
