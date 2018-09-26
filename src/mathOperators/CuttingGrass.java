@@ -13,7 +13,7 @@ double money = -99.9;
 double cost = -99.9;
 Scanner input = new Scanner(System.in);
 System.out.println("What are the dimensions of the lawn?");
-length = input.nextInt();
+length = input.nextInt();  
 width = input.nextInt();
 System.out.println("What is the radius of the fountain?");
 radius = input.nextInt();
@@ -21,7 +21,7 @@ lawn = length * width;
 fountain = (int) (Math.PI * Math.pow(radius,2));
 money = (lawn - fountain)/100;
 cost = money*1.25;
-System.out.println("The cost is " + cost);
+System.out.println("The cost is $" + cost);
 	}
 
 }
