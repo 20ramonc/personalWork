@@ -22,7 +22,7 @@ System.out.println("What is the speed of the mower?");
 speedmower = input.nextInt();
 area = (length*width);
 widthmower2 = (((widthmower)*12)/5280);
-cost = ((int) speed/rate);
+cost = ((int) speedmower/rate);
 
 	}
 
