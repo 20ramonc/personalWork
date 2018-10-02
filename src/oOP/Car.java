@@ -9,7 +9,7 @@ public void sayOdometer(){
 	System.out.println("0 miles");
 }
 
-public void sayFlat(){
+public void sayFlat (){
 	System.out.println("You have a flat tire");
 }
 public void sayThirsty (){
