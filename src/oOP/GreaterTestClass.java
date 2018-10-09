@@ -14,6 +14,11 @@ Friend sammy = new Friend ();
 Friend kyle = new Friend ();
 billy.sayMessage();
 kyle.sayMessage();
+Greater tom = new Greater ();
+System.out.println(tom.getAge());
+tom.setAge(6);
+System.out.println(tom.getAge());
+
 	}
 
 }
