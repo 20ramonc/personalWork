@@ -6,7 +6,7 @@ private int Accountnumber;
 private double rate;
 public Bank () {
 	Balance = 0.00;
-	Accountnumber = 000-000;
+	Accountnumber = 000000;
 	rate= 0.00;
 }
 public double getBalance () {
@@ -38,24 +38,31 @@ return Balance;
 }
 public double withdrawl () {
 	Scanner input = new Scanner(System.in);
-	System.out.println("withdraw1: ");
+	System.out.println("withdrawl: ");
 	double withdrawl = input.nextDouble();
 	System.out.println( "new balance: " + (Balance-withdrawl));
 	return Balance;
 }
 public double interest () {
 	Scanner input = new Scanner(System.in);
+	System.out.println("Account number: ");
+	double Accountnumber = input.nextDouble();
+	System.out.println("deposit: ");
+	double deposit = input.nextDouble();
+	System.out.println( "new balance: " + (Balance+deposit));
 	System.out.println("interest rate: ");
 	double rate = input.nextDouble();
-	Balance= Balance*(rate/100) +1;
-	System.out.println("new balance: "+ (Balance+rate));
+	Balance= Balance*((rate/100) +1);
+	System.out.println("new balance: "+ (Balance+deposit)+rate);
 	return Balance;
+	
+	
 }
 public double charge () {
 	Scanner input = new Scanner(System.in);
 	System.out.println("finance chage: ");
 	double charge = input.nextDouble();
-	System.out.println("new balance: "+ (Balance+rate-charge));
+	System.out.println("new balance: "+ (Balance-charge));
 	return Balance;
 }
 }
