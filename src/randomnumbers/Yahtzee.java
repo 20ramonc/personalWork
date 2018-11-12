@@ -16,36 +16,33 @@ int five=0;
 int yahtzee=0;
 int rolls=0;
 do{
-	for(int counter=1; counter<=5; counter++) {
+	for(int counter=0; counter<=5; counter++) {
 		randomNum=min + generator.nextInt()*(min-max+1);
 		if(randomNum==1){
 			one++;
-	}
-	if(randomNum==2) {
-		two++;
-	}
-	if(randomNum==3) {
-		three++;
-	}
-	if(randomNum==4) {
-		four++;
-	}
-	if(randomNum==5) {
-		five++;
-	}
+		}
+		if(randomNum==2) {
+			two++;
+		}if(randomNum==3) {
+			three++;
+		}if(randomNum==4) {
+			four++;
+		}if(randomNum==5) {
+			five++;
+		}
 	}
 if(one==5||two==5||three==5||four==5||five==5) {
 	System.out.println("Yahtzee!");
 	rolls++;
 }else {
 	System.out.println("roll again");
-	rolls++;
-	
+	rolls++;	
 }
 }while(yahtzee!=1);
 	System.out.println(rolls+"rolls");
 }
 }
+
 	
 
 	
