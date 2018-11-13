@@ -6,8 +6,12 @@ public class length {
 		// TODO Auto-generated method stub
 Scanner input = new Scanner(System.in);
 System.out.println("sentence");
+int counter=0;
 String sentence = input.nextLine();
-System.out.println("number of characters: " + sentence.length());
+for (counter=0; counter<sentence.length(); counter++) {
+	System.out.println(sentence.charAt(counter));
+}
+
 	}
 
 }
