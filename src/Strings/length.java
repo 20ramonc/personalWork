@@ -11,7 +11,7 @@ String sentence = input.nextLine();
 for (counter=0; counter<sentence.length(); counter++) {
 	System.out.println(sentence.charAt(counter));
 }
-
+System.out.println(" number of characters" + sentence.length());
 	}
 
 }
