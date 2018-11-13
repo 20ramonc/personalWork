@@ -8,7 +8,7 @@ Scanner input = new Scanner(System.in);
 System.out.println("sentence");
 String sentence = input.nextLine();
 System.out.print("The letter X first ocurs at index " + sentence.indexOf("X"));
-
+;
 	}
 
 }
