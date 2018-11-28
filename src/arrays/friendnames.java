@@ -8,13 +8,15 @@ Scanner input = new Scanner(System.in);
 String [] names= new String[10];
 for(int j =0; j<names.length;j++){
 	System.out.println("name");
-	names[j] = input.nextLine();
+	names[j]=input.nextLine();
+}String letters = input.nextLine(); 
+char letter=letters.charAt(0);
+for(int j =0; j<names.length;j++){
+	int nLenght=(names[j].length());
+	int lastletter=names[j].charAt(nLenght)-1;
+	if(lastletter==letter);
+		System.out.print(names[j]);
 }
-System.out.println("reverse order");
-for(int j =names.length-1; j>=0;j++){
-	System.out.println(names[j]);
-}
-System.out.println("Program over");
 	}
 
 }
