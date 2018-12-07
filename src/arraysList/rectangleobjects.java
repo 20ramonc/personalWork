@@ -12,11 +12,14 @@ ArrayList<rectangle> boxes = new ArrayList<rectangle>(400);
 for(int j =0; j<400; j++){
 	boxes.add(new rectangle(50+gen.nextInt(20), (50+gen.nextInt(20))));
 }
-
+rectangle remove = boxes.remove(boxes.size()-1);
+boxes.set(0, remove);
 System.out.println("area for rectangles");
 for(int j=boxes.size()-1; j>=0;  j--){
 	rectangle box = boxes.get(j);
-	System.out.println(j+" "+box.area());
+	System.out.println(box.getLength());
+	System.out.println(box.getWidth());
+	System.out.println(j+" area "+box.area());
 	
 }
 
