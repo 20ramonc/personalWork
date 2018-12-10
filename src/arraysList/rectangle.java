@@ -1,15 +1,15 @@
-package arrays;
+package arraysList;
 
-public class Rectangle {
+public class rectangle {
 	private int length;
 	private int width;
 
-	public Rectangle() {
+	public rectangle() {
 		length = 10;
 		width = 10;
 	}
 
-	public Rectangle(int xLength, int xWidth) {
+	public rectangle(int xLength, int xWidth) {
 		length = xLength;
 		width = xWidth;
 	}
