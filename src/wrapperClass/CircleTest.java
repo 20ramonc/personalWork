@@ -7,7 +7,7 @@ public class CircleTest {
 		// TODO Auto-generated method stub
 Scanner input = new Scanner(System.in);
 ArrayList<Circle>radii= new ArrayList<Circle>();
-for(int j =0; j<10; j++){
+for(int j =0; j<=10; j++){
 	System.out.println("radius");
 	Circle bob=new Circle(input.nextDouble());
 	radii.add(bob);
