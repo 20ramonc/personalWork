@@ -14,7 +14,7 @@ public harddrive(){
 }
 public harddrive(String xname, ArrayList<Double> xfiles, double xtotalcapacity, double xfreespace){
 	name=xname;
-	files=xfiles;
+	files =xfiles;
 	totalcapacity=xtotalcapacity;
 	freespace=xfreespace;
 }
@@ -26,12 +26,14 @@ public void deletefile(double index){
 }
 public boolean isFull(){
 	if(freespace==0){
+		return true;
 	}
-	return true;
+	return false;
 	}
 public boolean isEmpty(){
 	if(freespace==totalcapacity){
-	}
 	return true;
+	}
+	return false;
 }
 }
