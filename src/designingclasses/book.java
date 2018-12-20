@@ -23,7 +23,7 @@ public int getPages () {
 	return pages;
 }
 public String toString(){
-	return "Book object: title= " + title + "number of pages= "+ pages;
+	return "Book object: title= " + title + " number of pages= "+ pages;
 }
 public boolean equals(book otherObject){
 	return(this.toString().equals(otherObject.toString()));
