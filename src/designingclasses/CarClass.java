@@ -65,4 +65,5 @@ public void setMPG(double newMpg)
         fuel = fuel - (milesTraveled/mpg);
         odometer = odometer + milesTraveled;
     }
+ 
 }
