@@ -36,8 +36,24 @@ public double averageScore(){
 	
 }
 public int lowestscore(){
-	int lowest=1000000;
-	if()
+	int lowest=1000;
+	for(int j =0; j<5; j++){
+		tests.add(50);
+		if(tests.get(j)>lowest){
+			lowest=tests.get(j);
+		}
+	}
+	return lowest;
 }
+public String toString (){
+	return "Student name: "+ name+ " how many valid test scores"+ howmany;
+}
+public studentclass clone () {
+	return new studentclass(name);
+}
+public boolean equals (studentclass other) {
+	return (this.toString().equals(other.toString()));
+}
+
 }
 
