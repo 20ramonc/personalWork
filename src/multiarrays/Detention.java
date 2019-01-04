@@ -18,6 +18,7 @@ for(int j=0; j<students.length; j++){
 			int xgrade=input.nextInt();
 			xgrade=grade;
 			students[j][r].setGrade(grade);
+			
 		}
 	}
 }int length=0;
