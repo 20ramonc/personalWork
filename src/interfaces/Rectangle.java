@@ -1,6 +1,6 @@
 package interfaces;
 
-public class Rectangle {
+public class Rectangle implements Shape{
 		private int length;
 		private int width;
 
@@ -30,11 +30,11 @@ public class Rectangle {
 			width = xWidth;
 		}
 
-		public int perimeter() {
+		public double perimeter() {
 			return length * 2 + width * 2;
 		}
 
-		public int area() {
+		public double area() {
 			return length * width;
 		}
 		public String toString() {
